@@ -5,7 +5,7 @@
 # > At a black square, turn 90° counter-clockwise, flip the color of the square, move forward one unit
 
 
-# ## Liberaires
+# ## Libraries
 
 
 import pygame
