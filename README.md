@@ -1,2 +1,2 @@
 # Games
-Some games that I made using Python
+Some classic games that I made using Python
