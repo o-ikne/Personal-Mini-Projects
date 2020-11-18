@@ -1,2 +1,2 @@
 # Games
-This repository contains some games that I made in Python
+Some games that I made using Python
