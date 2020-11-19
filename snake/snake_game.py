@@ -2,7 +2,6 @@
 
 # ## Libraries
 
-import math
 import pygame
 import random
 
@@ -55,7 +54,7 @@ class Food(object):
 # ## Class Snake
 
 class Snake:
-    def __init__(self, x:int=0, y:int=0, body_color=AQUA, head_color=YELLOW):
+    def __init__(self, x:int=0, y:int=0, body_color:tuple=AQUA, head_color:tuple=YELLOW):
         self.x = x
         self.y = y
         self.vx = 0
