@@ -1,13 +1,14 @@
+###########################################################
+#                    Maze Generator                       #
+###########################################################
 
-# # Maze Generator
 
 ## Libraries
-
 import pygame
 import random
 
 
-# ## Colors & Parameters
+## Colors & Parameters
 
 ## colors
 GREEN  = (34, 200, 34)
@@ -25,8 +26,7 @@ rw = 20  # the width of grid's cells
 rh = 20  # the height of the grid's cells
 
 
-# ## Cell Class
-
+## Cell Class
 class Cell:
     def __init__(self, i:int=0, j:int=0, line_width:int=1, color:tuple=BLACK):
         self.i = i
@@ -52,8 +52,7 @@ class Cell:
             pygame.draw.lines(screen, self.color, False, [((self.i + 1) * rw, self.j * rh), ((self.i + 1) * rw, (self.j + 1) * rh)], self.line_width)
 
 
-# ## Maze Class
-
+## Maze Class
 class Maze:
     def __init__(self):
         self.cells = [[Cell(i=j, j=i) for j in range(w // rw)]  for i in range(h // rh)]
@@ -91,8 +90,7 @@ class Maze:
                 cell.draw(screen)
 
 
-# ## Main Function
-
+## Main Function
 def main():
     pygame.font.init()
     ## initiate the screen
