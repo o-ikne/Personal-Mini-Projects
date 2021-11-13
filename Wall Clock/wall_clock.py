@@ -1,13 +1,14 @@
-# # Wall Clock
+###########################################################
+#                      Wall Clock                         #
+###########################################################
 
-# ## Libraries
-
+## Libraries
 import pygame
 from numpy import cos, sin, pi
 from time import strftime, localtime
 
 
-# ## Parameters & Colors
+## Parameters & Colors
 
 ## colors
 WHITE = (255,255,255)
@@ -23,8 +24,7 @@ w = 400
 h = 600
 
 
-# ## Clock
-
+## Clock
 class Clock(object):
     
     def __init__(self, center:tuple, time=strftime('%H:%M:%S', localtime()), radius:int=160):
@@ -101,8 +101,7 @@ class Clock(object):
         self.draw_ticks(screen)
 
 
-# ## Main function
-
+## Main function
 def main():
     ## initiate the screen
     pygame.font.init()
@@ -134,6 +133,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-
