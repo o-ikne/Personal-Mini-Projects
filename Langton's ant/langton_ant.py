@@ -1,20 +1,19 @@
-# ## Rules
-# 
+###########################################################
+#                    Langton's ant                        #
+###########################################################
+
+## Rules
 # > At a white square, turn 90° clockwise, flip the color of the square, move forward one unit
-# 
 # > At a black square, turn 90° counter-clockwise, flip the color of the square, move forward one unit
 
 
-# ## Libraries
-
-
+## Libraries
 import pygame
 import numpy as np
 
 
 
-# ## Parameters and colors
-
+## Parameters and colors
 ## Dimensions of the grid
 w  = 800  # the width of the grid
 h  = 500  # the height of the grid
@@ -31,8 +30,7 @@ BLUE = (28,128,130)
 
 
 
-# ## The Grid Class
-
+## The Grid Class
 class Grid(object):
     
     def __init__(self, w:int=w, h:int=h, rw:int=rw, rh:int=rh, c:tuple=GRAY):
@@ -72,8 +70,7 @@ class Grid(object):
 
 
 
-# ## The Ant Class
-
+## The Ant Class
 class Ant(object):
     
     def __init__(self, x:int, y:int, vx:int=0, vy:int=1, c:tuple=RED):
@@ -125,7 +122,6 @@ class Ant(object):
 
 
 ## The main function 
-
 def main():
     pygame.init()
     
