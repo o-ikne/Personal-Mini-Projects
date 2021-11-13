@@ -1,13 +1,14 @@
-# # Snake
+###########################################################
+#                          Snake                          #
+###########################################################
 
-# ## Libraries
 
+## Libraries
 import pygame
 import random
 
 
-# ## Colors & Parameters
-
+## Colors & Parameters
 ## Colors
 YELLOW  = (255, 255, 0)
 GREEN   = (34,139,34)
@@ -30,8 +31,7 @@ rw = 20  # the width of cells of the grid
 rh = 20  # the height of cells of the grid
 
 
-# ## Class Food
-
+## Class Food
 class Food(object):
     
     def __init__(self, color:tuple=RED):
@@ -51,8 +51,7 @@ class Food(object):
         pygame.draw.rect(screen, self.color, (self.x, self.y, rw, rh))
 
 
-# ## Class Snake
-
+## Class Snake
 class Snake:
     def __init__(self, x:int=0, y:int=0, body_color:tuple=AQUA, head_color:tuple=YELLOW):
         self.x = x
@@ -111,7 +110,6 @@ class Snake:
 
 
 ## Main function
-
 def main():
     pygame.init()
     screen=pygame.display.set_mode((w, h))
@@ -171,10 +169,5 @@ def main():
         clock.tick(10)
         
 
-
-
 if __name__ == '__main__':
     main()
-
-
-
