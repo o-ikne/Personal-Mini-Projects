@@ -1,17 +1,16 @@
+###########################################################
+#                      Old Clock                          #
+###########################################################
 
-# # Old Clock
 
 
-
-# ## Libraries
-
+## Libraries
 import pygame
 from numpy import cos, sin, pi,random
 from time import strftime, localtime
 
 
-# ## Color & Parameters
-
+## Color & Parameters
 ## colors
 GREEN = (34,139,34)
 WHITE = (255,255,255)
@@ -27,8 +26,7 @@ w = 300
 h = 600
 
 
-# ## Clock
-
+## Clock
 class Clock(object):
     def __init__(self, center:tuple, time=strftime('%H:%M:%S', localtime()), radius=50, l_pointer=300):
         self.x = 0
@@ -71,8 +69,7 @@ class Clock(object):
         pygame.draw.circle(screen, self.color, (int(self.center[0]), int(self.center[1])), 10)
 
 
-# ## Main function
-
+## Main function
 def main():
     pygame.init()
     screen = pygame.display.set_mode((w, h))
@@ -100,4 +97,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
